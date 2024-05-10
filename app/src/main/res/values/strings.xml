@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearnAndroidNative</string>
+    <string name="message">Hello world!!!</string>
 </resources>
