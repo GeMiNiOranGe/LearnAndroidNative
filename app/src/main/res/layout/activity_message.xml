@@ -14,14 +14,14 @@
         android:layout_marginBottom="5sp"
         android:text="@string/message"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/btnClick"
+        app:layout_constraintBottom_toTopOf="@id/btn_click"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/btnClick"
+        android:id="@+id/btn_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5sp"
