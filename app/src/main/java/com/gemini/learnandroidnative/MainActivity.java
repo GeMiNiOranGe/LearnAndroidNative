@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 result -> {
                     if (result.getResultCode() == RESULT_OK) {
                         Intent data = result.getData();
-                        String value = data.getStringExtra("ReturnKeyOne");
-                        Toast.makeText(this, value, Toast.LENGTH_SHORT).show();
+                        handleData(data);
                     }
                 }
         );
@@ -45,5 +44,14 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com/"));
             startActivity(intent);
         });
+    }
+
+    private void handleData(Intent data) {
+        if (data == null) {
+            return;
+        }
+
+        String value = data.getStringExtra("ReturnKeyOne");
+        Toast.makeText(this, value, Toast.LENGTH_SHORT).show();
     }
 }
