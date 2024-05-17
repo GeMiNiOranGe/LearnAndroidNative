@@ -2,6 +2,8 @@ package com.gemini.learnandroidnative;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +14,15 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
-        finish();
+        Button btnClick = findViewById(R.id.btn_close);
+
+        Intent intent = getIntent();
+        String value = intent.getStringExtra("KeyOne");
+        Toast.makeText(this, value, Toast.LENGTH_SHORT).show();
+
+        btnClick.setOnClickListener(view -> {
+            finish();
+        });
     }
 
     @Override

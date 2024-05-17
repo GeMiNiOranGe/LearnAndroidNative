@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">LearnAndroidNative</string>
-    <string name="message">Hello world!!!</string>
-    <string name="main_btnClick">Open message screen</string>
-    <string name="main_btnYoutube">Open youtube</string>
-    <string name="message_click">Another click</string>
+    <string name="main_btn_message">Open message screen</string>
+    <string name="main_btn_youtube">Open youtube</string>
+    <string name="message_btn_click">Close screen</string>
+    <string name="message_text_message">Hello world!!!</string>
 </resources>

@@ -7,26 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_click"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp"
-        android:text="@string/main_btnClick"
-        app:layout_constraintBottom_toTopOf="@id/btn_youtube"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <Button
-        android:id="@+id/btn_youtube"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_btnYoutube"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_click" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="@string/main_btn_message" />
+
+        <Button
+            android:id="@+id/btn_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_click"
+            android:layout_alignStart="@id/btn_click"
+            android:layout_alignEnd="@id/btn_click"
+            android:text="@string/main_btn_youtube" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
